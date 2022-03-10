@@ -11,7 +11,7 @@ passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
 
-var scopes = ['identify', 'email', /* 'connections', (it is currently broken) */ 'guilds', 'guilds.join'];
+var scopes = ['identify', 'email', /* 'connections', (it is currently broken) */ 'guilds', ];
 var prompt = 'consent'
 
 passport.use(new Strategy({
